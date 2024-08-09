@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Pretendard: "Pretendard",
+        Jeju: "Jeju",
+        Okay: "Okay"
+      }
+    },
   },
   plugins: [
     require("tailwindcss-animate")

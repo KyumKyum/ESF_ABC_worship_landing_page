@@ -5,6 +5,31 @@
 :root {
   display: flex;
   justify-content: center;
-  background-color: #9fe8f5;
+  color-scheme: light;
   padding: 20px;
+}
+
+body {
+  background-color: #9fe8f5;
+}
+
+@font-face {
+  font-family: 'Jeju';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_jejudoldam.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Okay';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/Ownglyph_okticon-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
 }
