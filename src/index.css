@@ -6,11 +6,11 @@
   display: flex;
   justify-content: center;
   color-scheme: light;
-  padding: 20px;
 }
 
+
 body {
-  background-color: #9fe8f5;
+  background-color: black;
 }
 
 @font-face {

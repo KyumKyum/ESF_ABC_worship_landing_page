@@ -1,17 +1,12 @@
-import HoveringTitle from '../component/Title'
 import TypingText from '../component/TypingText';
 
 const WelcomePage = () => {
     return (
-        <div className='flex flex-col w-full h-[350px] justify-center items-center'>
-            <div data-aos="fade-up">
-                <HoveringTitle text={"ABC"} />  
-                <HoveringTitle text={"Worship"} />  
-            </div>
+        <div className='flex flex-col w-full h-svh justify-center items-center'>
             <TypingText 
-                text='All because of GOD, we all come here and worshiping the LORD together.' 
+                text='All Because of Christ, we all come here and worshiping the lord together.' 
                 typingSpeed={70} 
-                className='mt-4 font-Okay'
+                className='mt-4 font-Okay text-white'
             />
         </div>
     )
