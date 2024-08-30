@@ -1,16 +1,18 @@
-const InformaitonPage = () => {
-    return (
-        <div className='flex flex-col w-full h-[350px] items-center'>
-            <div className='flex flex-col h-[350px] w-4/6 items-start' data-aos="fade-right">
-                <p className='text-4xl font-Jeju'>When?</p>   
-                <p className='text-md font-Okay mt-4'>September 7th, 2024, 19:00</p>
-            </div>
-            <div className='flex flex-col h-[350px] w-4/6 items-end' data-aos="fade-left">
-                <p className='text-4xl font-Jeju'>Where?</p>   
-                <p className='text-md font-Okay mt-4'>ESF 3F</p>
-            </div>
-        </div>
-    )
+
+function InformationPage() {
+  
+
+
+  return (
+    <div className="relative w-full">
+      <div className="flex flex-col w-full justify-center">
+        <p className="my-40 font-Okay text-white place-self-start">Some text in here</p>
+        <p className="my-40 font-Okay text-white place-self-end">Some text in there</p>
+        <p className="my-40 font-Okay text-white place-self-start">Lorem ipsum dolor sit amet</p>
+        <p className="my-40 font-Okay text-white place-self-end">Lorem ipsum dolor sit amet</p>
+      </div>
+    </div>
+  );
 }
 
-export default InformaitonPage;
+export default InformationPage;
