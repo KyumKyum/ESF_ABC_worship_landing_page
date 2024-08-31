@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import BannerImg from './assets/banner.jpg';
 import PosterImg from './assets/poster.jpg';
-import StarsImg from './assets/stars.png';
 import WelcomePage from './page/WelcomePage';
 import InformaitonPage from './page/InformationPage';
 import SongPage from './page/SongPage';
@@ -44,7 +43,7 @@ function App() {
       ([entry]) => {
         setIsWelcomeVisible(entry.isIntersecting);
       },
-      { threshold: 0.2 } // Reduced the threshold for better detection
+      { threshold: 0.5 } // Reduced the threshold for better detection
     );
 
     if (welcomeRef.current) {
@@ -75,16 +74,15 @@ function App() {
           alt='poster'
         />
       </motion.div>
-      <div className='h-[700px]' ref={welcomeRef}>
-        {isWelcomeVisible && 
-          <motion.div
-            initial={{opacity: 0}}
-            animate={{ opacity: 1}}
-            transition={{duration: 1}}
-          >
-            <WelcomePage />
-          </motion.div>
-        }
+      <div className='h-[600px]' ref={welcomeRef}>
+        <motion.div
+          initial={{opacity: 0}}
+          animate={{ opacity: isWelcomeVisible ? 1 : 0 }}
+          exit={{ opacity: 0 }}
+          transition={{duration: 1}}
+        >
+          <WelcomePage />
+        </motion.div>
       </div>
       <div ref={bannerRefView} className='m-0'>
         <motion.img
