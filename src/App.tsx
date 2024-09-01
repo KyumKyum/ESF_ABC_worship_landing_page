@@ -62,7 +62,7 @@ function App() {
   }, [isWelcomeVisible]);
 
   return (
-    <div className='flex flex-col items-center max-w-[400px] min-w-[300px]'>
+    <div className='flex flex-col items-center max-w-[400px] min-w-[300px] mb-20'>
       <motion.div 
         className='mb-48'
         initial={{opacity: 0}}
