@@ -73,7 +73,7 @@ function App() {
           alt='poster'
         />
       </motion.div>
-      <div ref={bannerRefView} className='m-0 px-20'>
+      <div ref={bannerRefView} className='m-0 px-12'>
         <motion.img
           ref={bannerRef}
           src={BannerImg}
@@ -86,7 +86,7 @@ function App() {
       </div>
 
       <InformaitonPage />
-      <div className='w-full mt-20 px-16'>
+      <div className='w-full mt-20 px-12'>
         <SongPage/>
       </div>
       

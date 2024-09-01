@@ -4,7 +4,7 @@ function InformationPage() {
 
 
   return (
-    <div className="relative w-full px-16">
+    <div className="relative w-full px-12">
       <div className="flex flex-col w-full justify-center">
         <p className="mb-28 font-bkk text-white text-center ">
           "There is another in the fire,<br/>
