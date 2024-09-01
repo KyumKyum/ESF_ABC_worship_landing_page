@@ -62,7 +62,7 @@ function App() {
   }, [isWelcomeVisible]);
 
   return (
-    <div className='flex flex-col items-center max-w-[400px] min-w-[300px] px-20'>
+    <div className='flex flex-col items-center max-w-[400px] min-w-[300px]'>
       <motion.div 
         className='mt-20'
         initial={{opacity: 0}}
@@ -74,7 +74,7 @@ function App() {
           alt='poster'
         />
       </motion.div>
-      <div className='h-[600px]' ref={welcomeRef}>
+      <div className='h-[600px] px-20' ref={welcomeRef}>
         <motion.div
           initial={{opacity: 0}}
           animate={{ opacity: isWelcomeVisible ? 1 : 0 }}
@@ -84,7 +84,7 @@ function App() {
           <WelcomePage />
         </motion.div>
       </div>
-      <div ref={bannerRefView} className='m-0'>
+      <div ref={bannerRefView} className='m-0 px-20'>
         <motion.img
           ref={bannerRef}
           src={BannerImg}
@@ -97,7 +97,7 @@ function App() {
       </div>
 
       <InformaitonPage />
-      <div className='w-full mt-20'>
+      <div className='w-full mt-20 px-20'>
         <SongPage/>
       </div>
       <div className='mx-20 h-32 flex justify-center items-baseline'> 
