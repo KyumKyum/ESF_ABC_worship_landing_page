@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         Pretendard: "Pretendard",
         Jeju: "Jeju",
-        Okay: "Okay"
+        Okay: "Okay",
+        bkk: "bkk"
       }
     },
   },

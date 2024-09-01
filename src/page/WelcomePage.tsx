@@ -10,7 +10,7 @@ const WelcomePage = () => {
             <TypingText 
                 text='Title. Lorem ipsum dolor sit amet, consectetur adipiscing elit.' 
                 typingSpeed={70} 
-                className='font-Okay text-white'
+                className='font-bkk text-white'
             />
         </div>
     )

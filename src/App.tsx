@@ -26,7 +26,7 @@ function App() {
         const scrollY = window.scrollY;
         const banner = bannerRef.current;
         if (banner) {
-          banner.style.transform = `translateY(${scrollY * 0.6}px)`; // 스크롤에 따른 패럴랙스 효과
+          banner.style.transform = `translateY(${scrollY * 0.9}px)`; // 스크롤에 따른 패럴랙스 효과
         }
       };
 
@@ -64,7 +64,7 @@ function App() {
   return (
     <div className='flex flex-col items-center max-w-[400px] min-w-[300px]'>
       <motion.div 
-        className='mt-20'
+        className='mb-48'
         initial={{opacity: 0}}
         animate={{ opacity: 1}}
         transition={{duration: 1}}
@@ -74,7 +74,7 @@ function App() {
           alt='poster'
         />
       </motion.div>
-      <div className='h-[600px] px-20' ref={welcomeRef}>
+      {/* <div className='h-[600px] px-20' ref={welcomeRef}>
         <motion.div
           initial={{opacity: 0}}
           animate={{ opacity: isWelcomeVisible ? 1 : 0 }}
@@ -83,7 +83,7 @@ function App() {
         >
           <WelcomePage />
         </motion.div>
-      </div>
+      </div> */}
       <div ref={bannerRefView} className='m-0 px-20'>
         <motion.img
           ref={bannerRef}
@@ -97,12 +97,13 @@ function App() {
       </div>
 
       <InformaitonPage />
-      <div className='w-full mt-20 px-20'>
+      <div className='mx-20 h-32 flex justify-center items-baseline'> 
+        <p className="my-20 font-bkk text-white">Google Form Here</p>
+      </div>
+      <div className='w-full mt-20 px-16'>
         <SongPage/>
       </div>
-      <div className='mx-20 h-32 flex justify-center items-baseline'> 
-        <p className="my-20 font-Okay text-white">Google Form Here</p>
-      </div>
+      
     </div>
   );
 }
