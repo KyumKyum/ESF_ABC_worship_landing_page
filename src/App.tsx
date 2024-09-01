@@ -86,9 +86,6 @@ function App() {
       </div>
 
       <InformaitonPage />
-      <div className='mx-20 h-32 flex justify-center items-baseline'> 
-        <p className="my-20 font-bkk text-white">Google Form Here</p>
-      </div>
       <div className='w-full mt-20 px-16'>
         <SongPage/>
       </div>
