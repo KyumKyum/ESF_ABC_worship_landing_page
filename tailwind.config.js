@@ -10,7 +10,9 @@ export default {
         Pretendard: "Pretendard",
         Jeju: "Jeju",
         Okay: "Okay",
-        bkk: "bkk"
+        bkk: "bkk",
+        lsy: "lsy",
+        snow: "snow"
       }
     },
   },

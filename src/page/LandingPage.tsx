@@ -63,7 +63,6 @@ function LandingPage() {
   return (
     <div className='flex flex-col items-center max-w-[400px] min-w-[300px] mb-20'>
       <motion.div 
-        className='mb-20'
         initial={{opacity: 0}}
         animate={{ opacity: 1}}
         transition={{duration: 1}}
