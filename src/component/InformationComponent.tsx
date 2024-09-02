@@ -24,6 +24,9 @@ function InformationComponent() {
         >
           <span className="text-black">Click here for Google Form</span>
         </button>
+        <p className="my-12 font-snow text-sm text-white text-center">
+          Location: Seoul Seongdong-gu<br/>Haengdang-dong 28-6 ESF Hanyang Branch
+        </p>
       </div>
     </div>
   );
