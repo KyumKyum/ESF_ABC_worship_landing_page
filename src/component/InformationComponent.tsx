@@ -22,7 +22,7 @@ function InformationComponent() {
           onClick={() => {window.open("https://docs.google.com/forms/d/1tKIzcDBJef-kylQAOMmcm-vrtQwxNtUrH-NkeynAcoQ/viewform?ts=66d43258&edit_requested=true")}} 
           className="my-16 font-snow text-white text-lg text-center bg-white border-solid border-2 border-white rounded-xl"
         >
-          <span className="text-black">Click here to reigster</span>
+          <span className="text-black">Click here for Google Form</span>
         </button>
       </div>
     </div>
